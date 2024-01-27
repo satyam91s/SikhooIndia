@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Employee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/navbar.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header>
+        <section>
+            <nav class="nav1">
+                <div class="logo">
+                  <img src="logo.png" alt="Logo">
+                  <h1>Sikhoo India</h1>
+                </div>
+                
+              
+               
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button> 
+                  </div>
+              
+                
+              
+                <div class="dark-light">
+                  <button onclick="toggleMode()">Dark Mode</button>
+                </div>
+        
+                <div class="profile">
+                    <img src="profile.png" alt="Profile">
+                  </div>
+              </nav>
+            <nav class="nav2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    
+                    <li class="dropdown">
+                      <a href="#">Learning</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Communication</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Programming</a></li>
+                      </ul>
+                    </li>
+                
+                    <li class="dropdown">
+                      <a href="#">Employement</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Sepecific Degree</a></li>
+                        <li><a href="#">Rural people</a></li>
+                        <li><a href="#">12th passout</a></li>
+                        <li><a href="#">Teenager</a></li>
+                        <li><a href="#">Older People</a></li>
+                      </ul>
+                    </li>
+                
+                    <li class="dropdown">
+                      <a href="#">Schemes</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Financial</a></li>
+                        <li><a href="#">Educational</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                      <a href="#">Mid-Day Meal</a>
+                      <ul class="dropdown-menu dropdown-right">
+                        <li><a href="#">Commercial</a></li>  
+                        <li><a href="#">Residential</a></li>
+                        <li><a href="#">Retail</a></li>
+                      </ul>
+                    </li>
+                
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                  <div class="buttons">
+                    <button>Sign In</button>
+                    <button>Sign Up</button>
+                  </div>
+            </nav>
+            
+            <script src="JS/navbar.js"></script>
+            
+        </section>
+        <!-- navbar end -->
+
+        </section>
+
+    </header>
+   
+
+    <!-- navbar end -->
+
+    <!-- slider start  -->
+    <section >
+        <div class="sliderimg">
+        <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+<div id="captioned-gallery">
+	<figure class="slider">
+		<figure>
+			<img src="hobbiton-lake.jpg" alt>
+			<figcaption>Hobbiton, New Zealand</figcaption>
+		</figure>
+		<figure>
+			<img src="wanaka-drowned-tree.jpg" alt>
+			<figcaption>Wanaka, New Zealand</figcaption>
+		</figure>
+		<figure>
+			<img src="utah-peak.jpg" alt>
+			<figcaption>Utah, United States</figcaption>
+		</figure>
+		<figure>
+			<img src="bryce-canyon-utah.jpg" alt>
+			<figcaption>Bryce Canyon, Utah, United States</figcaption>
+		</figure>
+		<figure>
+			<img src="hobbiton-lake.jpg" alt>
+			<figcaption>Hobbiton, New Zealand</figcaption>
+		</figure>
+	</figure>
+</div>
+</div>
+    </section>
+    <!-- slider end -->
+    <!-- features start -->
+    <section>
+
+    </section>
+
+    <!-- features end -->
+    <!-- process start -->
+    <section>
+
+    </section>
+
+    <!-- process end -->
+    <!-- overview start -->
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+
+    <!-- overview end -->
+    <!-- animated image slider start -->
+    <section>
+
+    </section>
+    <!-- animated image slider end -->
+    <footer>
+        <section>
+
+        </section>
+    </footer>
+    <!-- <div class="container my-2" align="center">
+
+        <h3>Registration  List</h3>
+        <a th:href="@{/login}" class="btn btn-primary btn-sm mb-3">sign in</a>
+        <table style="width:80%" border="1" class="table table-striped table-responsive-md">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>password</th>
+                    <th>role</th>
+                    <th>mobile number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user:${allemplist}">
+                    <td th:text="${user.name}"></td>
+                    <td th:text="${user.email}"></td>
+                    <td th:text="${user.password}"></td>
+                    <td th:text="${user.role}"></td>
+                    <td th:text="${user.mobile}"></td>
+                    <td> <a th:href="@{/showFormForUpdate/{id}(id=${user.id})}" class="btn btn-primary">Update</a>
+                        <a th:href="@{/deleteEmployee/{id}(id=${user.id})}" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+</body>
+
+</html>

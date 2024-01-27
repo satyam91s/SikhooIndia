@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- navbar start -->
+        <section>
+            
+            <nav class="nav1">
+                <div class="logo">
+                  <img src="logo.png" alt="Logo">
+                  <h1>Construct India</h1>
+                </div>
+                
+              
+               
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button> 
+                  </div>
+              
+                
+              
+                <div class="dark-light">
+                  <button onclick="toggleMode()">Dark Mode</button>
+                </div>
+        
+                <div class="profile">
+                    <img src="profile.png" alt="Profile">
+                  </div>
+              </nav>
+            <nav class="nav2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    
+                    <li class="dropdown">
+                      <a href="#">Infrastructure</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Decoration</a></li>
+                        <li><a href="#">Floor Planning</a></li>
+                      </ul>
+                    </li>
+                
+                    <li class="dropdown">
+                      <a href="#">Remodeling</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Redesigning</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">Furnishing</a></li>
+                        <li><a href="#">Painting</a></li>
+                      </ul>
+                    </li>
+                
+                    <li class="dropdown">
+                      <a href="#">Guidance</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Civil</a></li>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">Designer</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                      <a href="#">Real Estate</a>
+                      <ul class="dropdown-menu dropdown-right">
+                        <li><a href="#">Commercial</a></li>  
+                        <li><a href="#">Residential</a></li>
+                        <li><a href="#">Retail</a></li>
+                      </ul>
+                    </li>
+                
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                  <div class="buttons">
+                    <button>Sign In</button>
+                    <button>Sign Up</button>
+                  </div>
+            </nav>
+            
+            <script src="JS/navbar.js"></script>
+            
+        </section>
+        <!-- navbar end -->
+    </header>
+</body>
+</html>
